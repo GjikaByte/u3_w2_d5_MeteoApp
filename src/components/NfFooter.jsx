@@ -3,7 +3,7 @@ export default function NfFooter() {
     <footer className="bg-black text-white-50 mt-5">
       <div className="container py-5">
 
-        {/* Social icons */}
+        
         <div className="mb-3">
           <a href="#" className="text-white-50 me-3 fs-5"><i className="bi bi-facebook" /></a>
           <a href="#" className="text-white-50 me-3 fs-5"><i className="bi bi-instagram" /></a>
@@ -11,7 +11,7 @@ export default function NfFooter() {
           <a href="#" className="text-white-50 fs-5"><i className="bi bi-youtube" /></a>
         </div>
 
-        {/* Link columns */}
+        
         <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 small">
           <div className="col">
             <ul className="list-unstyled m-0">

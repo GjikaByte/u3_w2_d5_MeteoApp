@@ -1,10 +1,15 @@
+import { Link, NavLink } from 'react-router-dom';
+
 export default function NfNavbar() {
+  const navClass = ({ isActive }) => 'nav-link' + (isActive ? ' active' : '');
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark sticky-top py-1" style={{ background: '#141414' }}>
       <div className="container-fluid px-2 px-md-3">
-        <a className="navbar-brand me-3" href="#">
+        
+        <Link className="navbar-brand me-3" to="/">
           <img src="/assets/media/netflix_logo.png" alt="Netflix" height="37" className="align-middle" />
-        </a>
+        </Link>
 
         <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
           aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,16 +17,16 @@ export default function NfNavbar() {
         </button>
 
         <div id="mainNav" className="collapse navbar-collapse">
-          {/* Left: primary nav */}
+         
           <ul className="navbar-nav me-auto small">
-            <li className="nav-item"><a className="nav-link" href="#">Home</a></li>
-            <li className="nav-item"><a className="nav-link active" href="#">TV Shows</a></li>
+            <li className="nav-item"><NavLink to="/" className={navClass} end>Home</NavLink></li>
+            <li className="nav-item"><NavLink to="/tv-shows" className={navClass}>TV Shows</NavLink></li>
             <li className="nav-item"><a className="nav-link" href="#">Movies</a></li>
             <li className="nav-item"><a className="nav-link" href="#">Recently Added</a></li>
             <li className="nav-item"><a className="nav-link" href="#">My List</a></li>
           </ul>
 
-          {/* Right: tools */}
+         
           <ul className="navbar-nav ms-auto align-items-center gap-2 small">
             <li className="nav-item d-none d-md-block">
               <a className="nav-link" href="#"><i className="bi bi-search" /></a>

@@ -1,4 +1,4 @@
-/* Reusable horizontal scroll row */
+
 export default function CarouselRow({ title, items = [], className = '' }) {
   return (
     <>
