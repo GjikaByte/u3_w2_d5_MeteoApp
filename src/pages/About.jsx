@@ -6,15 +6,18 @@ export const About = () => {
       <h2>Chi siamo</h2>
 
       <p>
-        La società ha per oggetto lo svolgimento di attività di trading, intermediazione e fornitura di liquidità nei mercati delle materie prime ambientali e degli strumenti legati alla transizione energetica, ivi inclusi, a titolo esemplificativo e non esaustivo, crediti di carbonio, certificati di energia rinnovabile (EAC), accordi di acquisto di energia (PPA/GPA), biometano, biocarburanti e strumenti analoghi.
+        Europe Flow è una società indipendente attiva nel trading e nella fornitura di soluzioni ambientali nei mercati della transizione energetica. Operiamo come partner di fiducia per aziende e istituzioni che desiderano ridurre le proprie emissioni, promuovere la sostenibilità e accedere in modo efficiente ai mercati ambientali globali.
       </p>
 
       <p>
-        La società potrà altresì svolgere attività di consulenza, analisi di mercato, gestione di portafogli di strumenti ambientali e di supporto a soggetti pubblici e privati nella definizione di strategie di sostenibilità e transizione energetica, purché nei limiti consentiti dalla legge.
+        La nostra attività comprende il trading e l’intermediazione di crediti di carbonio, certificati di energia rinnovabile (EAC), accordi di acquisto di energia (PPA/GPA), biometano e biocarburanti, oltre a strumenti connessi alla decarbonizzazione e alla produzione di energia pulita.
       </p>
 
       <p>
-        Potrà compiere tutte le operazioni commerciali, industriali, mobiliari, immobiliari e finanziarie ritenute necessarie o utili al raggiungimento dell’oggetto sociale, esclusa ogni attività riservata per legge a soggetti iscritti in albi professionali o sottoposta ad autorizzazioni specifiche.
+        Combinando competenza finanziaria, analisi di mercato e conoscenza tecnica, supportiamo i nostri clienti nella gestione e valorizzazione dei portafogli ambientali, garantendo trasparenza, liquidità e impatto positivo.
+      </p>
+      <p>
+        La nostra missione è contribuire alla costruzione di un’economia a basse emissioni, facilitando la connessione tra domanda e offerta di strumenti ambientali e accelerando il percorso verso un futuro energetico sostenibile.
       </p>
     </section>
   );

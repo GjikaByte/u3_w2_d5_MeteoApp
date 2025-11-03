@@ -5,6 +5,7 @@ import { Services } from "./pages/Services";
 import { Contact } from "./pages/Contact";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
+import { Solutions } from "./pages/Solutions";
 
 export default function App(){
   const [route, setRoute] = React.useState("home");
@@ -25,6 +26,7 @@ export default function App(){
         {route === "about" && <About/>}
         {route === "services" && <Services/>}
         {route === "contact" && <Contact/>}
+        { route === "solutions" && <Solutions/>}
       </main>
       <Footer />
     </div>
