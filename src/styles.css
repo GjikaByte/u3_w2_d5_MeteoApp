@@ -97,13 +97,16 @@ body {
 
 /* MAIN */
 .main,
-.mainEsp {
+.mainEsp,
+.mainEn {
   max-width: 1150px;
   margin: 40px auto;
   padding: 20px;
   min-height: calc(100vh - 160px);
   background: transparent;
 }
+
+
 
 /* PAGE */
 .page h2 {

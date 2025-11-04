@@ -1,12 +1,14 @@
 import React from "react";
 import Logo from "../assets/Logo.png";
 import espFlag from "../assets/espFlag.png";
-import itFlag from "../assets/itFlag.png"; 
+import itFlag from "../assets/itFlag.png";
+import ukFlag from "../assets/ukFlag.png";
 
 export const Navbar = ({ onNavigate, onLangChange, currentLang }) => {
   return (
     <>
-      {currentLang === "it" ? (
+      {/* 🇮🇹 ITALIAN */}
+      {currentLang === "it" && (
         <header className="nav">
           <div className="nav-inner">
             <div className="brand" onClick={() => onNavigate("home")}>
@@ -15,9 +17,7 @@ export const Navbar = ({ onNavigate, onLangChange, currentLang }) => {
               </div>
               <div>
                 <div className="brand-title">Europe Flow</div>
-                <div className="brand-sub">
-                  Trading & Consulenza Ambientale
-                </div>
+                <div className="brand-sub">Trading & Consulenza Ambientale</div>
               </div>
             </div>
 
@@ -28,25 +28,19 @@ export const Navbar = ({ onNavigate, onLangChange, currentLang }) => {
               <a href="#solutions">Soluzioni</a>
               <a href="#contact">Contatti</a>
 
-              {/* Language Switch → Spanish */}
-              <a
-                href="#homeEsp"
-                onClick={(e) => {
-                  e.preventDefault(); // prevent default jump
-                  onLangChange("es"); // switch to Spanish
-                  window.location.hash = "homeEsp"; // correct Spanish route
-                }}
-              >
-                <img
-                  src={espFlag}
-                  alt="Versión en español"
-                  className="lang-flag"
-                />
+              <a href="#homeEsp" onClick={(e) => { e.preventDefault(); onLangChange("es"); }}>
+                <img src={espFlag} alt="Español" className="lang-flag" />
+              </a>
+              <a href="#homeEn" onClick={(e) => { e.preventDefault(); onLangChange("en"); }}>
+                <img src={ukFlag} alt="English" className="lang-flag" />
               </a>
             </nav>
           </div>
         </header>
-      ) : (
+      )}
+
+      {/* 🇪🇸 SPANISH */}
+      {currentLang === "es" && (
         <header className="nav">
           <div className="nav-inner">
             <div className="brand" onClick={() => onNavigate("homeEsp")}>
@@ -55,79 +49,54 @@ export const Navbar = ({ onNavigate, onLangChange, currentLang }) => {
               </div>
               <div>
                 <div className="brand-title">Europe Flow</div>
-                <div className="brand-sub">
-                  Trading y Consultoría Ambiental
-                </div>
+                <div className="brand-sub">Trading y Consultoría Ambiental</div>
               </div>
             </div>
 
             <nav className="nav-links">
-              {/* Spanish Navigation */}
-              <a
-                href="#homeEsp"
-                onClick={(e) => {
-                  e.preventDefault(); // prevent default jump
-                  
-                  window.location.hash = "homeEsp"; // correct Spanish route
-                }}
-              >
-                Inicio
-              </a>
+              <a href="#homeEsp">Inicio</a>
+              <a href="#aboutEsp">Quiénes somos</a>
+              <a href="#servicesEsp">Servicios</a>
+              <a href="#solutionsEsp">Soluciones</a>
+              <a href="#contactEsp">Contacto</a>
 
-              <a
-                href="#aboutEsp"
-                onClick={(e) => {
-                  e.preventDefault(); // prevent default jump
-                  window.location.hash = "aboutEsp"; // correct Spanish route
-                }}
-              >
-                Quiénes somos
+              <a href="#home" onClick={(e) => { e.preventDefault(); onLangChange("it"); }}>
+                <img src={itFlag} alt="Italiano" className="lang-flag" />
               </a>
-
-              <a
-                href="#servicesEsp"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.hash = "servicesEsp";
-                }}
-              >
-                Servicios
+              <a href="#homeEn" onClick={(e) => { e.preventDefault(); onLangChange("en"); }}>
+                <img src={ukFlag} alt="English" className="lang-flag" />
               </a>
+            </nav>
+          </div>
+        </header>
+      )}
 
-              <a
-                href="#solutionsEsp"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.hash = "solutionsEsp";
-                }}
-              >
-                Soluciones
+      {/* 🇬🇧 ENGLISH */}
+      {currentLang === "en" && (
+        <header className="nav">
+          <div className="nav-inner">
+            <div className="brand" onClick={() => onNavigate("homeEn")}>
+              <div className="logo">
+                <img src={Logo} alt="Europe Flow logo" />
+              </div>
+              <div>
+                <div className="brand-title">Europe Flow</div>
+                <div className="brand-sub">Trading & Environmental Consulting</div>
+              </div>
+            </div>
+
+            <nav className="nav-links">
+              <a href="#homeEn">Home</a>
+              <a href="#aboutEn">About us</a>
+              <a href="#servicesEn">Services</a>
+              <a href="#solutionsEn">Solutions</a>
+              <a href="#contactEn">Contact</a>
+
+              <a href="#home" onClick={(e) => { e.preventDefault(); onLangChange("it"); }}>
+                <img src={itFlag} alt="Italiano" className="lang-flag" />
               </a>
-
-              <a
-                href="#contactEsp"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.hash = "contactEsp";
-                }}
-              >
-                Contacto
-              </a>
-
-              {/* Language Switch → Italian */}
-              <a
-                href="#home"
-                onClick={(e) => {
-                  e.preventDefault();
-                  onLangChange("it");
-                  window.location.hash = "home";
-                }}
-              >
-                <img
-                  src={itFlag}
-                  alt="Versione italiana"
-                  className="lang-flag"
-                />
+              <a href="#homeEsp" onClick={(e) => { e.preventDefault(); onLangChange("es"); }}>
+                <img src={espFlag} alt="Español" className="lang-flag" />
               </a>
             </nav>
           </div>
