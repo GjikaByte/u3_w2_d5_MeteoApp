@@ -11,9 +11,41 @@ export const Home = () => {
             offrendo servizi di trading, intermediazione e fornitura di liquidità per crediti di carbonio, EAC, PPA/GPA, biometano e altro.
           </p>
           <div className="cta-row">
-            <a className="btn primary" href="#services">Scopri i servizi</a>
-            <a className="btn ghost" href="#contact">Contattaci</a>
+            <a
+              className="btn primary"
+              href="#services"
+              onClick={(e) => {
+                e.preventDefault();
+                const target = '#services';
+                if (window.location.hash !== target) {
+                  window.location.hash = target;            // <-- include the '#'
+                } else {
+                  // if already on #services, force your router to react
+                  window.dispatchEvent(new HashChangeEvent('hashchange'));
+                }
+              }}
+            >
+              Scopri i servizi
+            </a>
+            <a
+            className="btn ghost"
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              const target = "#contact"; // full hash
+              if (window.location.hash !== target) {
+                window.location.hash = target;
+              } else {
+                // trigger route reload if already there
+                window.dispatchEvent(new HashChangeEvent("hashchange"));
+              }
+            }}
+          >
+            Contattaci
+          </a>
           </div>
+
+
         </div>
         <div className="hero-visual">
           <div className="card">

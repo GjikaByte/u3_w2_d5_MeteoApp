@@ -7,11 +7,41 @@ export const HomeEsp = () => {
         <div className="hero-text">
           <h1>Trading y consultoría para la transición energética</h1>
           <p>
-            Operamos en los mercados de materias primas ambientales y de instrumentos relacionados con la transición energética, ofreciendo servicios de trading, intermediación y suministro de liquidez para créditos de carbono, EAC, PPA/GPA, biometano y más.
+            Operamos en los mercados de materias primas ambientales y de instrumentos relacionados con la transición energética, ofreciendo servicios de trading, intermediación y provisión de liquidez para créditos de carbono, EAC, PPA/GPA, biometano y más.
           </p>
-          <div className="cta-row">
-            <a className="btn primary" href="#services">Scopri i servizi</a>
-            <a className="btn ghost" href="#contact">Contattaci</a>
+<div className="cta-row">
+            <a
+              className="btn primary"
+              href="#servicesEsp"
+              onClick={(e) => {
+                e.preventDefault();
+                const target = '#servicesEsp';
+                if (window.location.hash !== target) {
+                  window.location.hash = target;            // <-- include the '#'
+                } else {
+                  // if already on #services, force your router to react
+                  window.dispatchEvent(new HashChangeEvent('hashchange'));
+                }
+              }}
+            >
+              Descubre los servicios
+            </a>
+            <a
+            className="btn ghost"
+            href="#contactEsp"
+            onClick={(e) => {
+              e.preventDefault();
+              const target = "#contactEsp"; // full hash
+              if (window.location.hash !== target) {
+                window.location.hash = target;
+              } else {
+                // trigger route reload if already there
+                window.dispatchEvent(new HashChangeEvent("hashchange"));
+              }
+            }}
+          >
+            Contáctanos
+          </a>
           </div>
         </div>
         <div className="hero-visual">

@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/Logo.png";
+import Logo from "../assets/Logo2.png";
 import espFlag from "../assets/espFlag.png";
 import itFlag from "../assets/itFlag.png";
 import ukFlag from "../assets/ukFlag.png";
@@ -14,10 +14,7 @@ export const Navbar = ({ onNavigate, onLangChange, currentLang }) => {
             <div className="brand" onClick={() => onNavigate("home")}>
               <div className="logo">
                 <img src={Logo} alt="Europe Flow logo" />
-              </div>
-              <div>
-                <div className="brand-title">Europe Flow</div>
-                <div className="brand-sub">Trading & Consulenza Ambientale</div>
+                <span className="logo-text">Europe Flow</span>
               </div>
             </div>
 
@@ -43,13 +40,10 @@ export const Navbar = ({ onNavigate, onLangChange, currentLang }) => {
       {currentLang === "es" && (
         <header className="nav">
           <div className="nav-inner">
-            <div className="brand" onClick={() => onNavigate("homeEsp")}>
+            <div className="brand" onClick={() => onNavigate("home")}>
               <div className="logo">
                 <img src={Logo} alt="Europe Flow logo" />
-              </div>
-              <div>
-                <div className="brand-title">Europe Flow</div>
-                <div className="brand-sub">Trading y Consultoría Ambiental</div>
+                <span className="logo-text">Europe Flow</span>
               </div>
             </div>
 
@@ -75,13 +69,10 @@ export const Navbar = ({ onNavigate, onLangChange, currentLang }) => {
       {currentLang === "en" && (
         <header className="nav">
           <div className="nav-inner">
-            <div className="brand" onClick={() => onNavigate("homeEn")}>
+            <div className="brand" onClick={() => onNavigate("home")}>
               <div className="logo">
                 <img src={Logo} alt="Europe Flow logo" />
-              </div>
-              <div>
-                <div className="brand-title">Europe Flow</div>
-                <div className="brand-sub">Trading & Environmental Consulting</div>
+                <span className="logo-text">Europe Flow</span>
               </div>
             </div>
 
@@ -105,3 +96,5 @@ export const Navbar = ({ onNavigate, onLangChange, currentLang }) => {
     </>
   );
 };
+
+

@@ -7,15 +7,15 @@ export const Solutions = () => {
       description: "Credito di carbonio che consente di compensare emissioni non evitabili mediante progetti certificati.",
       keyBenefit: "Compensazione delle emissioni residue verso il target net-zero.",
       linkText: "Scopri di più",
-      linkHref: "#",
+      linkHref: "#contact",
       scope: ["Scope 1", "Scope 2"]
     },
     {
       title: "Power Purchase Agreements (PPA/GPA)",
       description: "Contratti a lungo termine con generatori di energia rinnovabile per garantire forniture stabili e sostenibili.",
       keyBenefit: "Stabilità dei costi + sviluppo infrastrutture rinnovabili.",
-      linkText: "Parla con un esperto",
-      linkHref: "#",
+      linkText: "Scopri di più",
+      linkHref: "#contact",
       scope: ["Scope 2"]
     },
     {
@@ -23,7 +23,7 @@ export const Solutions = () => {
       description: "Gas rinnovabile prodotto da scarti organici, alternativa ai combustibili fossili per ridurre le emissioni Scope 1 e 3.",
       keyBenefit: "Riduzione delle emissioni dirette e lungo la catena di fornitura.",
       linkText: "Scopri di più",
-      linkHref: "#",
+      linkHref: "#contact",
       scope: ["Scope 1", "Scope 3"]
     },
     {
@@ -31,7 +31,7 @@ export const Solutions = () => {
       description: "Carburanti rinnovabili e materie prime che sostituiscono combustibili fossili nell’industria o nei trasporti.",
       keyBenefit: "Emissions Scope 1 e 3 ridotte per trasporto, industria e supply chain.",
       linkText: "Scopri di più",
-      linkHref: "#",
+      linkHref: "#contact",
       scope: ["Scope 1", "Scope 3"]
     },
   ];

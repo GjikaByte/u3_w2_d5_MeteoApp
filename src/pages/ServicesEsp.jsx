@@ -3,7 +3,7 @@ import React from "react";
 export const ServicesEsp = () => {
   return (
     <section className="page services">
-      <h2>Servizi</h2>
+      <h2>Servicios</h2>
 
       <ul className="services-list">
         <li>
@@ -12,7 +12,7 @@ export const ServicesEsp = () => {
         </li>
 
         <li>
-          <h3>Suministro de liquidez</h3>
+          <h3>Provision de liquidez</h3>
           <p>Market making y soluciones de liquidez para operadores y proyectos.</p>
         </li>
 
