@@ -14,6 +14,7 @@ import { ContactEn } from "./pages/ContactEn";
 import { Solutions } from "./pages/Solutions";
 import { SolutionsEsp } from "./pages/SolutionsEsp";
 import { SolutionsEn } from "./pages/SolutionsEn";
+import { Privacy } from "./pages/Privacy";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 
@@ -77,6 +78,7 @@ export default function App() {
           {route === "services" && <Services />}
           {route === "solutions" && <Solutions />}
           {route === "contact" && <Contact />}
+          {route === "privacy" && <Privacy />}
         </main>
       )}
 
@@ -88,6 +90,7 @@ export default function App() {
           {route === "servicesEsp" && <ServicesEsp />}
           {route === "solutionsEsp" && <SolutionsEsp />}
           {route === "contactEsp" && <ContactEsp />}
+          {route === "privacy" && <Privacy />}
         </main>
       )}
 
@@ -99,6 +102,7 @@ export default function App() {
           {route === "servicesEn" && <ServicesEn />}
           {route === "solutionsEn" && <SolutionsEn />}
           {route === "contactEn" && <ContactEn />}
+          {route === "privacy" && <Privacy />}
         </main>
       )}
 
