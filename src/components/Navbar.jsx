@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/Logo2.png";
+import Logo from "../assets/Logo3.png";
 import espFlag from "../assets/espFlag.png";
 import itFlag from "../assets/itFlag.png";
 import ukFlag from "../assets/ukFlag.png";
@@ -75,7 +75,6 @@ export const Navbar = ({ onNavigate, onLangChange, currentLang }) => {
         <div className="brand" onClick={() => onNavigate("home")}>
           <div className="logo">
             <img src={Logo} alt="Europe Flow logo" />
-            <span className="logo-text">Europe Flow</span>
           </div>
         </div>
 
