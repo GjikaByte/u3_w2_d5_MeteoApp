@@ -1,16 +1,95 @@
-# React + Vite
+🌐 Brokerage Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A multilingual brokerage landing page built with React and Vite, featuring responsive design, dynamic navigation, and multi-language support (Italian, Spanish, English).
+All rights reserved — this repository is for demonstration and portfolio purposes only.
 
-Currently, two official plugins are available:
+🚫 License & Usage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Important:
+This project is proprietary.
+Cloning, copying, redistributing, or modifying the code is strictly prohibited without explicit permission from the author.
 
-## React Compiler
+© 2025 GjikaByte — All rights reserved.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+✨ Overview
 
-## Expanding the ESLint configuration
+The Brokerage Website is a clean, responsive, and modern single-page application designed to present brokerage services, company details, and contact information in multiple languages.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Key features include:
+
+🇮🇹 🇪🇸 🇬🇧 Multilingual navigation (Italian, Spanish, English)
+
+📱 Responsive layout with a collapsible hamburger menu
+
+⚙️ Reusable components for scalability (Navbar, Footer, etc.)
+
+💡 Optimized performance using Vite for fast builds and HMR
+
+🎨 Custom branding through Logo3.png and a favicon
+
+🧱 Project Structure
+BrokerageWebsite/
+├── node_modules/
+├── public/
+│   └── assets/              # Public static files
+├── src/
+│   ├── assets/              # Images, icons, flags
+│   ├── components/          # UI components (Navbar, Footer, etc.)
+│   ├── pages/               # Page sections
+│   ├── App.jsx              # Main React component
+│   ├── App.css
+│   ├── index.css
+│   ├── main.jsx             # React entry point
+│   └── styles.css           # Global styling
+├── favicon.ico              # Site icon
+├── index.html               # Root HTML file
+├── package.json
+├── vite.config.js
+└── README.md
+
+⚙️ Tech Stack
+
+Framework: React (with Hooks)
+
+Bundler: Vite
+
+Language: JavaScript (ES6+)
+
+Styling: CSS (modular and responsive)
+
+Assets: Local images & icons
+
+🚀 Development Setup
+
+This section is for authorized contributors only.
+
+Install dependencies
+
+npm install
+
+
+Run the local development server
+
+npm run dev
+
+
+Open in browser
+
+http://localhost:5173/
+
+
+Build for production
+
+npm run build
+
+🧩 Customization
+Feature	File	Description
+Logo	src/assets/Logo3.png	Replace with your company logo
+Favicon	/favicon.ico	Automatically loaded from index.html
+Languages	Navbar.jsx	Update links and labels for each locale
+Styling	src/styles.css or component CSS files	Adjust colors, fonts, and layout
+🧑‍💻 Author
+
+GjikaByte
+📧 [Author contact info, optional]
+© 2025 — All rights reserved.
