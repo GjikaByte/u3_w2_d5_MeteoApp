@@ -1,6 +1,6 @@
 🌐 Brokerage Website
 
-A multilingual brokerage landing page built with React and Vite, featuring responsive design, dynamic navigation, and multi-language support (Italian, Spanish, English).
+A multilingual brokerage web app built with React and Vite, featuring responsive design, dynamic navigation, and multi-language support (Italian, Spanish, English).
 All rights reserved — this repository is for demonstration and portfolio purposes only.
 
 🚫 License & Usage
