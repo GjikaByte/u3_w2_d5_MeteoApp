@@ -13,7 +13,7 @@ Cloning, copying, redistributing, or modifying the code is strictly prohibited w
 
 ✨ Overview
 
-The Brokerage Website is a clean, responsive, and modern single-page application designed to present brokerage services, company details, and contact information in multiple languages.
+The Brokerage Website is a clean, responsive, and modern application designed to present brokerage services, company details, and contact information in multiple languages.
 
 Key features include:
 
